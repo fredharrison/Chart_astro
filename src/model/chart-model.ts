@@ -66,6 +66,11 @@ export interface ChartOptions {
 	handleScroll: HandleScrollOptions;
 	/** Structure that describes scaling behavior */
 	handleScale: HandleScaleOptions;
+
+	/**
+	 * If true and ResizeObserver is in the window object, the chart will use it to automatically resize.
+	 */
+	experimentalResizeWithRO?: boolean;
 }
 
 export class ChartModel implements IDestroyable {
